@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sponsor SeaGL 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --autumn-leaf: #E26000;
+            --mint-leaf: #0EBB80;
+            --off-white: #fffcf8;
+            --sky-blue: #68E0FF;
+            --deep-sea: #064558;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, .nav-logo, .sponsor-label {
+            font-family: 'Dosis', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        body, p, span, li, a, button {
+            font-family: 'Lato', sans-serif;
+        }
+
+        body { 
+            background-color: var(--off-white); 
+            color: var(--deep-sea);
+        }
+
+        .btn-primary {
+            background-color: var(--autumn-leaf);
+            color: white;
+            padding: 1rem 2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-block;
+        }
+
+        .sponsor-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 2rem;
+            align-items: center;
+            justify-items: center;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .sponsor-logo-text {
+            font-family: 'Dosis', sans-serif;
+            font-weight: 700;
+            font-size: 1.25rem;
+            opacity: 0.4;
+            transition: opacity 0.3s;
+        }
+        .sponsor-logo-text:hover { opacity: 1; color: var(--autumn-leaf); }
+
+        .stat-card {
+            background: white;
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 3px solid var(--sky-blue);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="py-6 px-8 max-w-7xl mx-auto flex justify-between items-center">
+        <div class="nav-logo">
+        <img src="https://seagl.org/img/logo.svg" alt="SeaGL Logo" class="h-20 w-auto">
+        </div>
+        <div class="hidden md:flex space-x-10 text-xs font-bold uppercase tracking-widest">
+            <a href="#about" class="hover:text-orange-600 transition">Our Mission</a>
+            <a href="#sponsors" class="hover:text-orange-600 transition">Past Partners</a>
+            <a href="#tiers" class="hover:text-orange-600 transition">Tiers</a>
+            <a href="mailto:sponsor@seagl.org" class="text-orange-600 border-b-2 border-orange-600 pb-1">Become a Sponsor</a>
+        </div>
+    </nav>
+
+    <header class="pt-20 pb-32 px-4 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-6xl md:text-8xl font-bold mb-6 leading-none">Support Grassroots <br/>Open Source</h1>
+            <p class="text-xl font-light text-gray-600 mb-10 max-w-2xl mx-auto">
+                SeaGL is a free-as-in-freedom technical summit bridging the gap between professional technologists and newcomers.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <a href="#tiers" class="btn-primary">View 2026 Prospectus</a>
+                <div class="self-center text-xs font-bold uppercase tracking-widest opacity-60">
+                    Nov 6-7 • Seattle & Online
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="sponsors" class="py-32 max-w-7xl mx-auto px-8">
+        <div class="text-center mb-16">
+            <h2 class="sponsor-label text-sm font-bold opacity-40 mb-2">Previous Community Sponsors</h2>
+            <div class="h-px w-20 bg-orange-500 mx-auto"></div>
+        </div>
+                
+        <div class="sponsor-grid">
+            <img class="sponsor-logo" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google">
+            <img class="sponsor-logo" src="https://jmp.chat/static/jmp.svg" alt="JMP / CHAT">
+            <img class="sponsor-logo" src="https://www.vectorlogo.zone/logos/mysql/mysql-ar21.svg" alt="MySQL">
+            <img class="sponsor-logo" src="https://cdn.prod.website-files.com/647df29ef18b8f6ce076f610/67ad395e2b5e4fc466bacd8c_January_Wordmark_RGB_Blue.svg" alt="January">
+            <img class="sponsor-logo" src="https://seagl.org/img/sponsors/SchedulesDirect/sd_long.png" alt="Schedules Direct">
+            <img class="sponsor-logo" src="https://upload.wikimedia.org/wikipedia/commons/8/85/Intel_logo_2023.svg" alt="Intel">
+            <img class="sponsor-logo" src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon">
+            <img class="sponsor-logo" src="https://upload.wikimedia.org/wikipedia/commons/7/79/Red_Hat_Logo_2019.svg" alt="Red Hat">
+            <img class="sponsor-logo" src="https://upload.wikimedia.org/wikipedia/commons/2/29/Logo_of_AlmaLinux.svg" alt="Alma Linux">
+            <img class="sponsor-logo" src="https://seagl.org/img/sponsors/Ubuntu/ubuntu_orange_hex.png" alt="Ubuntu">
+        </div>
+    </section>
+
+
+    <section id="about" class="bg-white py-24 border-y border-gray-100">
+        <div class="max-w-6xl mx-auto px-8 grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-4xl font-bold mb-6">Bridging the movement</h2>
+                <p class="mb-4 text-gray-700">SeaGL strives to be welcoming and informative for everyone regardless of background knowledge. We provide a space to strengthen the free software movement through mentorship and collaboration.</p>
+                <p class="text-sm font-bold uppercase text-orange-600 tracking-tight">Expected Attendance: 400+ Technical Professionals & Students</p>
+            </div>
+            <div class="space-y-6">
+                <div class="p-6 bg-[#fffcf8] border border-gray-100">
+                    <h3 class="text-lg font-bold mb-2">Hybrid Experience</h3>
+                    <p class="text-sm opacity-80">Returning for our 4th in-person year at the UW HUB while maintaining a first-class digital portal for global participants.</p>
+                </div>
+                <div class="p-6 bg-[#fffcf8] border border-gray-100">
+                    <h3 class="text-lg font-bold mb-2">Privacy First</h3>
+                    <p class="text-sm opacity-80">Participants may join without entering personal information, upholding our commitment to user privacy and FLOSS values.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="max-w-7xl mx-auto px-8 py-24 mb-24">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="stat-card">
+                <div class="text-3xl font-bold">100%</div>
+                <div class="text-[10px] uppercase font-bold opacity-50 tracking-widest">Community Funded</div>
+            </div>
+            <div class="stat-card">
+                <div class="text-3xl font-bold">40+</div>
+                <div class="text-[10px] uppercase font-bold opacity-50 tracking-widest">Technical Talks</div>
+            </div>
+            <div class="stat-card">
+                <div class="text-3xl font-bold">13th</div>
+                <div class="text-[10px] uppercase font-bold opacity-50 tracking-widest">Annual Year</div>
+            </div>
+            <div class="stat-card">
+                <div class="text-3xl font-bold">UW</div>
+                <div class="text-[10px] uppercase font-bold opacity-50 tracking-widest">HUB Collaboration</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tiers" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-8">
+            <h2 class="text-4xl font-bold mb-12 text-center">Sponsorship Levels</h2>
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-px bg-gray-200 border border-gray-200">
+                <div class="bg-white p-10">
+                    <h3 class="text-2xl font-bold mb-1">Platinum</h3>
+                    <div class="text-orange-600 font-bold mb-6 tracking-tighter">$12,000+</div>
+                    <ul class="text-[10px] space-y-4 uppercase font-bold tracking-widest opacity-60">
+                        <li>Full Page Guide</li>
+                        <li>Track Sponsor</li>
+                        <li>Social Event</li>
+                        <li>Keynote Mentions</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-10">
+                    <h3 class="text-2xl font-bold mb-1">Gold</h3>
+                    <div class="text-orange-600 font-bold mb-6 tracking-tighter">$9,000</div>
+                    <ul class="text-[10px] space-y-4 uppercase font-bold tracking-widest opacity-60">
+                        <li>Expo Hall Spot</li>
+                        <li>Half Page Guide</li>
+                        <li>Track Sponsor</li>
+                        <li>Social Shoutouts</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-10">
+                    <h3 class="text-2xl font-bold mb-1">Silver</h3>
+                    <div class="text-orange-600 font-bold mb-6 tracking-tighter">$6,000</div>
+                    <ul class="text-[10px] space-y-4 uppercase font-bold tracking-widest opacity-60">
+                        <li>Quarter Page Guide</li>
+                        <li>Daily Morning Thanks</li>
+                        <li>Digital Reach</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-10">
+                    <h3 class="text-2xl font-bold mb-1">Bronze</h3>
+                    <div class="text-orange-600 font-bold mb-6 tracking-tighter">$3,000</div>
+                    <ul class="text-[10px] space-y-4 uppercase font-bold tracking-widest opacity-60">
+                        <li>Expo Table</li>
+                        <li>Web/Guide Listing</li>
+                        <li>Community Thanks</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 text-center text-sm italic opacity-60">
+                * Educational and Non-Profit exhibitor spaces are available for free. Email us for details.
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-24 text-center px-4">
+        <h2 class="text-3xl mb-8">Ready to support SeaGL?</h2>
+        <div class="mb-12">
+            <a href="mailto:sponsor@seagl.org" class="text-4xl md:text-6xl font-bold text-[#064558] hover:text-orange-600 transition underline decoration-orange-500 underline-offset-8">sponsor@seagl.org</a>
+        </div>
+        <p class="max-w-xl mx-auto text-sm opacity-60 mb-16">
+            SeaGL is a 501(c)(3) non-profit project. All sponsorships are tax-deductible to the extent allowed by law.
+        </p>
+        <div class="text-[10px] uppercase tracking-[0.3em] opacity-30">
+            Seattle GNU/Linux Conference 2026
+        </div>
+    </footer>
+
+</body>
+</html>
