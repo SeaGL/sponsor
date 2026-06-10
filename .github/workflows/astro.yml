@@ -1,4 +1,3 @@
-# Sample workflow for building and deploying an Astro site to GitHub Pages using pnpm
 name: Deploy Astro site to Pages
 
 on:
@@ -16,7 +15,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  BUILD_PATH: "." 
+  BUILD_PATH: "."
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
@@ -24,24 +23,13 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Pull repository files
         uses: actions/checkout@v6
-
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 8 # or 9, depending on your project preference
 
       - name: Detect package manager
         id: detect-package-manager
         run: |
-          if [ -f "${{ github.workspace }}/pnpm-lock.yaml" ]; then
-            echo "manager=pnpm" >> $GITHUB_OUTPUT
-            echo "command=install" >> $GITHUB_OUTPUT
-            echo "runner=pnpm" >> $GITHUB_OUTPUT
-            echo "lockfile=pnpm-lock.yaml" >> $GITHUB_OUTPUT
-            exit 0
-          elif [ -f "${{ github.workspace }}/yarn.lock" ]; then
+          if [ -f "${{ github.workspace }}/yarn.lock" ]; then
             echo "manager=yarn" >> $GITHUB_OUTPUT
             echo "command=install" >> $GITHUB_OUTPUT
             echo "runner=yarn" >> $GITHUB_OUTPUT
@@ -58,10 +46,10 @@ jobs:
             exit 1
           fi
 
-      - name: Setup Node
+      - name: Load and cache Node
         uses: actions/setup-node@v6
         with:
-          node-version: "24"
+          node-version: '24'
           cache: ${{ steps.detect-package-manager.outputs.manager }}
           cache-dependency-path: ${{ env.BUILD_PATH }}/${{ steps.detect-package-manager.outputs.lockfile }}
 
@@ -95,4 +83,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
